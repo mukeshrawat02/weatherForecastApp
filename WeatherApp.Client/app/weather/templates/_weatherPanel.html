@@ -1,0 +1,25 @@
+﻿<div class="panel" ng-class="panelType == 'primary' ? 'panel-primary' : 'panel-info'">
+    <div class="panel-heading">
+        <h2>{{weatherDetail.dayOfWeek}}</h2>
+        <h4>{{ weatherDetail.date }}</h4>
+    </div>
+    <div class="panel-body">
+        <div>
+            <p>
+                <img ng-src="{{weatherDetail.icon}}" />
+                <span class="dayTemp">{{weatherDetail.temp}}</span>
+                <h4>{{weatherDetail.weather}}</h4>
+                <em>{{weatherDetail.description}}</em>
+            </p>
+            <p class="font12">
+                Max Temp : {{weatherDetail.maxTemp}}
+                <br />
+                Min Temp : {{weatherDetail.minTemp}}
+                <br />
+                Humidity : {{weatherDetail.humidity}}
+                <br />
+                Wind Speed : {{weatherDetail.windSpeed}}
+            </p>
+        </div>
+    </div>
+</div>
